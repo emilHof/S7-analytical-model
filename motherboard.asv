@@ -1,0 +1,29 @@
+classdef motherboard
+    properties
+        ram {mustBeNumeric}
+        usb3 {mustBeNumeric}
+        usb2 {mustBeNumeric}
+        pin40 {mustBeNumeric}
+        lan {mustBeNumeric}
+        cores {mustBeNumeric}
+        clock {mustBeNumeric} %GHz
+        currentDraw {mustBeNumeric} %mA
+    end
+    
+    methods
+        function obj = motherboard(ram, usb3, usb3, lan, cores, clock, cDraw)
+            if nargin == 6
+                obj.ram = ram;
+                obj.usb3 = connectors;
+                obj.usb2 = 
+                obj.pin40 =
+                obj.lan = lan;
+                obj.cores = cores;
+                obj.clock = clock;
+                obj.currentDraw = cDraw;
+                true
+            end
+        end
+    end
+end
+

@@ -1,0 +1,13 @@
+%% variables & component decleration
+%radios
+RFM96w433mhz = radio(1.2, 95, 16, 115.12);
+xBeeProSX = radio(.0025, 55, 40, 120);
+
+%motherboards
+odriod = motherboard(4, {'usb3.0 x 4', 'usb2.0 x 1', 'H
+
+newBattery = battery(1000, 50);
+newDrive = hardDrive(256);
+sensor1 = sensor(50, 16, 10);
+
+
