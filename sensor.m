@@ -8,7 +8,7 @@ classdef sensor
     methods
         %constructor
         function obj = sensor(sRate, res, cDraw)
-            if nargin == 2
+            if nargin == 3
                 obj.sampleRate = sRate;
                 obj.resolution = res;
                 obj.currentDraw = cDraw;

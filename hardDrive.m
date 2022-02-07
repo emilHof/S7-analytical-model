@@ -1,6 +1,7 @@
 classdef hardDrive
     properties
-        capacity {mustBeNumeric} %GB
+        capacity {mustBeNumeric} %MB
+        stored {mustBeNumeric} %MB
     end
     
     methods

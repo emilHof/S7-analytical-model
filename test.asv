@@ -28,9 +28,9 @@ t_1 = 1; % 24 hrs
 % convert to seconds
 t_s = t_1 * 60 * 60;
 
-data_tIn = t_s * (gps.resolution * gps.sampleRate + salinity.resolution * salinity.sampleRate) / 8 / 1000000 %MB
+data_tIn = t_s * (gps.resolution * gps.sampleRate + salinity.resolution * salinity.sampleRate) / 8 / 1000000; %MB
 
-data_tOut = t_s * xBeeProSX.maxTransRate / 8 / 1000 %MB
+data_tOut = t_s * xBeeProSX.maxTransRate / 8 / 1000; %MB
 
 %% simulation
 % we simulate an operational day of the buoy
@@ -75,14 +75,10 @@ currentTotal_intr = currentSensors_intr + currentRadioSending_intr + currenRadio
 
 % to get the total discharge of the battery over the whole time period we
 % multiply the interval total by the whole time
-chargeLost = @(t) currentTotal_intr * t; %mAh
+chargeLost = currentTotal_intr * t %mAh
 
 % now we plot this function
-fplot(chargeLost, [0 t_total])
-grid on
-title('charge used over time')
-xlabel('time (hr)')
-ylabel('charge capacity lost (mAh)')
+
 
 
 

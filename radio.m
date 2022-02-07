@@ -8,7 +8,7 @@ classdef radio < matlab.System
     methods
         %constructor
         function obj = radio(cIdle, cTrans, cListen, maxTR)
-            if nargin == 3
+            if nargin == 4
                 obj.currentIdle = cIdle;
                 obj.currentTrans = cTrans;
                 obj.currentListen = cListen;

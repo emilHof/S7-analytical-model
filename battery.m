@@ -6,10 +6,8 @@ classdef battery < matlab.System
     methods
         %constructor
         function obj = battery(cap, mxCrnt)
-            if nargin == 2
-                obj.capacity = cap;
-                obj.maxCurrent = mxCrnt;
-            end
+            obj.capacity = cap;
+            obj.maxCurrent = mxCrnt;
         end
     end
 end
