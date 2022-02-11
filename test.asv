@@ -78,12 +78,10 @@ currentTotal_intr = currentSensors_intr + currentRadioSending_intr + currenRadio
 chargeLost = @(t) currentTotal_intr * t; %mAh
 
 % now we plot this function
-tiledlayout(2,1)
-nexttile
 fplot(chargeLost, [0 t_total])
 grid on
 title('charge spent over time')
-xlabel('time (h)')
+xlabel('time (hr)')
 ylabel('charge capacity lost (mAh)')
 
 % to find how much hard drive storage is used up over time, we take the
@@ -91,12 +89,13 @@ ylabel('charge capacity lost (mAh)')
 % the drive
 % to plot the storage in use over time we take data_In and plot it over
 % time (t) in hours, as data_In is in MB/h
-dataStored = @(t) data_tIn * t; %MB/h
+total
 
-%now this is plotted as well
-nexttile
-fplot(dataStored, [0 t_total])
-grid on
-title('storage capacity used over time')
-xlabel('time (h)')
-ylabel('data stored (MB)')
+
+
+
+
+
+
+
+
