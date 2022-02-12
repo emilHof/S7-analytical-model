@@ -134,13 +134,13 @@ for i = 1:t_intr_s:t_total_s
     end
 end
 
-% creates an array holding the total number of seconds and loops over it to convert each entry into hours
+% creates an array holding the total number of seconds and loops over ot to
+% 
 timeTotalArray = 0:t_total_s;
 for i = 1:t_total_s + 1
     timeTotalArray(i) = timeTotalArray(i)/60/60;
 end
-
-% prints the of charge used vs time
+% prints the graph
 nexttile
 plot(timeTotalArray, chargeUsedOverTime)
 grid on
